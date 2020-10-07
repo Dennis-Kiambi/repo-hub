@@ -1,7 +1,7 @@
 <div *ngIf=profile>
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-6">
                 <span class="d-block p-2 bg-primary text-white">
                     <h1>{{profile.name}}</h1>
                 </span>
@@ -10,14 +10,24 @@
                     <div class="card-body">
                         <h5 class="card-title">{{profile.bio}}</h5>
                         <p class="card-text">Has {{profile.public_repos}} public repositories.</p>
-                        <div *ngFor="let repo of repos">
-                            <p>{{repo.name}}</p>
-                            <a href="{{repo.html_url}}" class="btn btn-primary" target="_blank">View
-                                public repos</a>
-                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="alert alert-secondary" role="alert">
+                    Repositories under this account:
+                </div>
+                <div *ngFor="let repo of repos">
+                    <h5>Repo name: {{repo.name}}</h5>
+                    <p>{{repo.description}}</p>
+                    <a href="{{repo.html_url}}" class="btn btn-outline-info" target="_blank">View
+                        {{repo.name}} repo</a> <br><br>
+                </div>
+            </div>
         </div>
+        <!-- <div class="row"> -->
+        <!-- </div> -->
     </div>
 </div>
+
+<!-- <button type="button" class="btn btn-outline-info">Info</button> -->
