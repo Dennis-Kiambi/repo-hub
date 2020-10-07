@@ -10,8 +10,14 @@ export class ProfileComponent implements OnInit {
 
   profile: any;
   repos: any;
+  user: string;
 
   constructor(private profileService: ProfileService) {
+  }
+
+  searchGithub() {
+    this.profileService.updateProfile(this.user);
+
     this.profileService.getProfileData().subscribe(profile => {
       console.log(profile)
       this.profile = profile;
@@ -21,6 +27,7 @@ export class ProfileComponent implements OnInit {
       console.log(repos)
       this.repos = repos;
     });
+
   }
   ngOnInit() {
   }
