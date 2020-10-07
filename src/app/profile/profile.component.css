@@ -1,0 +1,14 @@
+.repo-details{
+    border-bottom: 1px solid gray;
+    padding-top: 4px;
+}
+
+.row{
+    margin-top: 5px;
+}
+
+.form{
+    padding-top: 5%;
+    max-width: 30%;
+    margin: auto;
+}
