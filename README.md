@@ -61,7 +61,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - Angular
 
 ## UI designed with
-Figma. Link to the [figma design](https://www.figma.com/file/e1VWtDhh2v1whp0IN8dpdV/Quotes-app?node-id=0%3A1)
+Figma. Link to the [figma design](https://www.figma.com/file/bZ5z3WxSjX6m01ox4D8bEt/Untitled?node-id=0%3A1)
 
 
 ## [License](https://github.com/Dennis-Kiambi/quote/blob/master/LICENSE.md)
