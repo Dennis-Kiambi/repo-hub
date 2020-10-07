@@ -10,13 +10,13 @@ export class ProfileComponent implements OnInit {
 
   profile: any;
   repos: any;
-  user: string;
+  username: string;
 
   constructor(private profileService: ProfileService) {
   }
 
   searchGithub() {
-    this.profileService.updateProfile(this.user);
+    this.profileService.updateProfile(this.username);
 
     this.profileService.getProfileData().subscribe(profile => {
       console.log(profile)
