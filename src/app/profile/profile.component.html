@@ -1,1 +1,23 @@
-<p>profile works!</p>
+<div *ngIf=profile>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <span class="d-block p-2 bg-primary text-white">
+                    <h1>{{profile.name}}</h1>
+                </span>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{profile.avatar_url}}" class="card-img-top" alt="avatar">
+                    <div class="card-body">
+                        <h5 class="card-title">{{profile.bio}}</h5>
+                        <p class="card-text">Has {{profile.public_repos}} public repositories.</p>
+                        <div *ngFor="let repo of repos">
+                            <p>{{repo.name}}</p>
+                            <a href="{{repo.html_url}}" class="btn btn-primary" target="_blank">View
+                                public repos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 import { mapToMapExpression } from '@angular/compiler/src/render3/util';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import 'rxj/add/operator/map';
+import 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +14,16 @@ export class ProfileService {
 
   constructor(private http: HttpClient) {
     console.log('Service is now ready')
+    this.username = 'Dennis-Kiambi';
+  }
+
+  getProfileData() {
+    return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientId + '&client_secret' + this.clientSecret)
+    // .subscribe(getProfileData => this.getProfileData());
+  }
+
+  getRepository() {
+    return this.http.get('https://api.github.com/users/' + this.username + '/repos')
+
   }
 }
