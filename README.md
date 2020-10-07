@@ -1,4 +1,4 @@
-# ![Quotes](https://dennis-kiambi.github.io/repo-hub/)
+# ![Repo-hub](https://dennis-kiambi.github.io/repo-hub/)
 # Portfolio
 <table>
 <tr>
