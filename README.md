@@ -64,9 +64,9 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 Figma. Link to the [figma design](https://www.figma.com/file/bZ5z3WxSjX6m01ox4D8bEt/Untitled?node-id=0%3A1)
 
 
-## [License](https://github.com/Dennis-Kiambi/quote/blob/master/LICENSE.md)
+## [License](https://github.com/Dennis-Kiambi/repo-hub/blob/master/LICENSE.md)
 
-[MIT] © [Dennis Kiambi ](https://dennis-kiambi.github.io/repo-hub/blob/master/LICENSE.md)
+[MIT] © [Dennis Kiambi ](https://github.com/Dennis-Kiambi/repo-hub/blob/master/LICENSE.md)
 
 
 # Quote
