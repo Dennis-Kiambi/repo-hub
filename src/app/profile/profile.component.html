@@ -4,7 +4,8 @@
     <div class="form-group">
         <input class="form-control form-control-lg" type="text" placeholder="Type github username to search">
 
-        <button [(ngModel)]="username" name="username" ngDefaultControl (click)="searchGithub()">Search</button>
+        <button class="btn btn-link" [(ngModel)]="username" name="username" ngDefaultControl
+            (click)="searchGithub()">Search</button>
     </div>
 </form>
 
