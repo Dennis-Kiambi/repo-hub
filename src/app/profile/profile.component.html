@@ -1,11 +1,10 @@
-<link rel="stylesheet" href="profile.component.css">
+<link rel="stylesheet" routerLink="profile.component.css">
 
 <form class="form">
     <div class="form-group">
         <input class="form-control form-control-lg" type="text" placeholder="Type github username to search">
 
-        <button class="btn btn-link" [(ngModel)]="username" name="username" ngDefaultControl
-            (click)="searchGithub()">Search</button>
+        <button class="btn btn-link" [(ngModel)]="username" ngDefaultControl (click)="searchGithub()">Search</button>
     </div>
 </form>
 
@@ -37,7 +36,7 @@
                 <div class="repo-details" *ngFor="let repo of repos">
                     <h5>Repo name: {{repo.name}}</h5>
                     <p>{{repo.description}}</p>
-                    <a href="{{repo.html_url}}" class="btn btn-outline-info" target="_blank">View
+                    <a routerLink="{{repo.html_url}}" class="btn btn-outline-info" target="_blank">View
                         {{repo.name}} repo</a> <br><br>
                 </div>
             </div>
