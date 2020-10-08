@@ -12,3 +12,7 @@
     max-width: 30%;
     margin: auto;
 }
+.form>button{
+    padding-top: 5px;
+    margin: auto;
+}
