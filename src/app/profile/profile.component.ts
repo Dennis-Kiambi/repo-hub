@@ -29,7 +29,12 @@ export class ProfileComponent implements OnInit {
 
   }
 
+
   ngOnInit() {
+  }
+  click() {
+    // alert("Hie")
+    this.searchGithub();
   }
 
 }

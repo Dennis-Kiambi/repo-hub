@@ -22,9 +22,9 @@ export class ProfileService {
   }
 
   getRepository() {
-    return this.http.get('https://api.github.com/users/' + this.username + '/repos')
+    return this.http.get('https://api.github.com/users/' + this.username + '/repos?client-id=' + this.clientId + '&client_secret' + this.clientSecret)
   }
-  updateProfile(username: string) {
-    this.username = username;
+  updateProfile(name: string) {
+    this.username = name;
   }
 }
