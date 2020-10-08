@@ -10,7 +10,7 @@ export class ProfileService {
 
   private username: string;
   private clientId: 'Iv1.f6ce4c05d4d8584a';
-  private clientSecret: '57c116616ead631982e016e9d2d859a3b35e448e';
+  private clientSecret: '7cfbb029312fa898841389150b7cf2a2237e318e';
 
   constructor(private http: HttpClient) {
     console.log('Service is now ready')
