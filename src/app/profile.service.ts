@@ -19,7 +19,6 @@ export class ProfileService {
 
   getProfileData() {
     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientId + '&client_secret' + this.clientSecret)
-    // .subscribe(getProfileData => this.getProfileData());
   }
 
   getRepository() {
